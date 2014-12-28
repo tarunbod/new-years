@@ -1,0 +1,43 @@
+@-webkit-keyframes moving {
+    100% {margin-top: 500px;}
+}
+
+@-webkit-keyframes flashing {
+    0%, 100% {color:red;background-color: yellow;}
+    25% {color:white;background-color: blue;}
+    50% {color:white;background-color: green; }
+    75% {color:white; background-color: red;}
+}
+
+img {
+    height: 332px;
+    width: 388.5px;
+    margin-left: -194.25px;
+    text-align: center;
+    -webkit-animation-name: moving;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+p {
+    font-size:48px;
+    text-align:center;
+    opacity: 0;
+    -webkit-animation: flashing 1s linear infinite;
+}
+
+#line {
+    height:1000px;
+    width:2px;
+    margin: -100px auto;
+    background-color: white;
+}
+
+h1:nth-child(2) {
+    color:white;
+    display:none;
+    float:right;
+    font-size: 50px;
+}
